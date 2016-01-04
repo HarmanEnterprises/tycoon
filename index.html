@@ -6,13 +6,16 @@
     
       <script>
       
-         Crafty.init(500,350, document.getElementById('game'));
+         Crafty.init(1000,1000, document.getElementById('game'));
 
-         Crafty.e('2D, DOM, Color').attr({x: 0, y: 0, w: 100, h: 100}).color('#A12');
+         for (i = 0; i < 1000; i=i+101) 
+         {
+            for(t = 0;t < 1000; t=t+101) 
+               {
+               Crafty.e('2D, DOM, Color').attr({x: i, y: t, w: 100, h: 100}).color('#B17');
 
-         Crafty.e("2D, DOM, Text").attr({ x: 100, y: 100 }).text("Look at me!!");
-  
-    
+               }
+         }
       </script>
    </body>
 
